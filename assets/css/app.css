@@ -1,0 +1,35 @@
+body{
+    background-color: grey;
+    color: white;
+}
+
+.index .nav-link{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.index .nav-link.active{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.index .nav-link:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+
+.index .link-div{
+    background-color: #5C5858;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.index .nav-bar-div{
+    background-color: #292925;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
+}
