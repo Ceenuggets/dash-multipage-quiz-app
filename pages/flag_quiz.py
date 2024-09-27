@@ -38,7 +38,7 @@ def provide_random_answers(answer):
     country_options.append(answer)
     while m < 3:
         incorrect_option = random.choice(sample)
-        if incorrect_option.strip().lower() != answer.strip().lower():
+        if (incorrect_option.strip().lower() != answer.strip().lower()) and (incorrect_option not in country_options):
             country_options.append(incorrect_option)
             m += 1
     random.shuffle(country_options)
