@@ -156,6 +156,18 @@
         width: 100%;
         height: 250px;
     }
+    .fq #result_display{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fq  #title{
+        font-size: 18px;
+    }
+    .fq #test_result{
+        font-size: 15px;
+    }
 }
 
 
