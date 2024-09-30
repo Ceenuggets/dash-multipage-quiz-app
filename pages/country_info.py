@@ -28,7 +28,7 @@ def question_and_options():
 "==================================================="
 
 
-dash.register_page(__name__, name="Country Quiz", path="/country_info")
+# dash.register_page(__name__, name="Country Quiz", path="/country_info")
 
 # print(countries_info)
 layout = dbc.Row([
