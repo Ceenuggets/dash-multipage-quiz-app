@@ -70,7 +70,7 @@ layout = dbc.Row([
             ], xs=12, sm=12, md=12, lg=12, xl=12),
             dcc.Store(id="select_countries_store", data=None),
             dcc.Store(id="correct_answer", data=None),
-        ], justify="center", className='g-0 fq'),
+        ], justify="center", className="g-0 fq"),
 
 
 @callback(
@@ -91,9 +91,6 @@ def display_country_info(country_names):
         options = [{"label": option, "value": option} for option in provide_random_answers(random_ten[0])]
 
         num_answered += 1
-        # report = [html.Span("—", style={'margin-right': '5px', 'font-size': '24px',
-        #                                 'color': 'forestgreen' if key == "pass" else 'red'})
-        #           for key in result.values()]
 
         report = [html.Span("✅" if key == "pass" else "❌",
                             style={'margin-right': '1px', 'font-size': '20px',
@@ -101,9 +98,9 @@ def display_country_info(country_names):
                   for key in result.values()]
         if len(random_ten) == 10:
             result = {}
-        print(report)
-        print(random_ten)
-        print((10 - (len(random_ten))) + 1)
+        # print(report)
+        # print(random_ten)
+        # print((10 - (len(random_ten))) + 1)
         return report, f"{(10 - (len(random_ten))) + 1} of 10", f"/assets/flags/{random_ten[0]}.jpg", options, \
         random_ten[0], random_ten
     else:
@@ -112,7 +109,7 @@ def display_country_info(country_names):
         if len(country_names) == 10:
             result = {}
 
-        print(country_names)
+        # print(country_names)
         # report = [html.Span("—", style={'margin-right': '10px', 'font-size': '24px', 'font-weight': 'bold',
         #                                 'color': 'forestgreen' if key == "pass" else 'red'})
         #           for key in result.values()]
@@ -122,7 +119,7 @@ def display_country_info(country_names):
                                    'font-weight': 'bold', 'color': 'forestgreen' if key == "pass" else 'red'})
                   for key in result.values()]
 
-        print(report)
+        # print(report)
         # print((10 - (len(country_names)) + 1))
         return report, f"{(10 - (len(country_names)) + 1)} of 10", f"/assets/flags/{country_names[0]}.jpg", options, \
         country_names[0], country_names
@@ -158,15 +155,15 @@ def select_answer(correct_answer, options, chosen_countries, select_answer):
                     if key not in result.keys():
                         result[key] = "fail"
 
-                    print((10 - (len(chosen_countries)) + 1))
-                    print(result)
+                    # print((10 - (len(chosen_countries)) + 1))
+                    # print(result)
                 elif label == correct_answer and label == select_answer:
                     label += " ✅ "
                     key = ((10 - (len(chosen_countries))) + 1)
                     if key not in result.keys():
                         result[key] = "pass"
-                    print((10 - (len(chosen_countries)) + 1))
-                    print(result)
+                    # print((10 - (len(chosen_countries)) + 1))
+                    # print(result)
                     chosen_countries.remove(correct_answer)
                     all_correct_answers.append(correct_answer)
                     # print(chosen_countries)

@@ -1,0 +1,149 @@
+.ci #div_parent{
+    background-color: #e690a0;
+    padding: 5px;
+}
+
+.ci #question_options_div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: 	#a91027;
+    border-radius: 5px;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+.ci #question_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+.ci #options_div{
+    background-color: #b72b3d;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.ci #question{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.ci #rd_capitals{
+    font-size: 20px;
+}
+.ci #btn_next{
+    background-color: crimson;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.ci #country_table{
+    background-color: #b72b3d;
+    font-weight: bold;
+    /* padding: 5px; */
+    border-radius: 5px;
+}
+
+/* .ci Tbody .row_data{
+    margin-left: 5px;
+} */
+
+.ci Tbody Td{
+    padding-left: 5px;
+}
+
+.ci #country_table_and_flag{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.ci #country_table{
+    flex: 1;
+    margin-right: 5px;
+}
+
+.ci #country_more_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: #b72b3d;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.ci #flag_img_div{
+    margin-bottom: 5px;
+}
+
+/* .ci #govt_date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b72b3d;
+    border-radius: 5px;
+} */
+
+/* .ci #govt_type{
+    background-color: #d34255;
+    width: 100%;
+    
+} */
+
+.ci .img_date_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ci #indpndnc_date{
+    background-color: #d34255;
+    width: 100%;
+}
+
+.ci #indp_div{
+    background-color: #a91027;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ci #indp_date{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ci #city_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: 	#a91027;
+    padding: 5px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.ci .pop_city{
+    font-weight: bold;
+    background-color: #d34255;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}

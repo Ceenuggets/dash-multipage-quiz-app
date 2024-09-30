@@ -32,7 +32,7 @@ def word_screen(input_char):
             new_word = list(masked_random_output)
             new_word[i] = input_char.lower()
             masked_random_output = "".join(new_word)
-            print("".join(new_word))
+            # print("".join(new_word))
     return masked_random_output
 
 
@@ -125,9 +125,9 @@ def update_output(value, interacted):
             if guess_outcome.lower() == random_output.lower():
                 match_found = True
                 # print("Yes, you've got the answer!")
-                print(num)
-                print(guessed_letters)
-                print(countries[random_output])
+                # print(num)
+                # print(guessed_letters)
+                # print(countries[random_output])
                 return random_output, html.P(["Minimum expected guesses: ", html.Span(len(set(random_output)), className="min-attempts shared-span-style")]),html.P(["Already guessed: ", html.Span(",".join(guessed_letters), className="guessed_letters shared-span-style")]),html.P(["Attempts: ", html.Span(str(num), className="attempts shared-span-style")]),{'backgroundColor': 'green', 'color': 'white', 'boxShadow': '5px 10px 5px rgba(0, 0, 0, 0.4)', 'border': '2px solid white'}, countries[random_output], f"/assets/flags/{random_output}.jpg",{"width": "100px", "height": "70px" }
             else:
                 return guess_outcome, html.P(["Minimum expected guesses: ", html.Span(len(set(random_output)), className="min-attempts shared-span-style")]), html.P(["Already guessed: ", html.Span(",".join(guessed_letters), className="guessed_letters shared-span-style")]),html.P(["Attempts: ", html.Span(str(num), className="attempts shared-span-style")]),{'backgroundColor': '#f0f0f0', 'color': 'black', 'boxShadow': 'box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.2)'}, "","", {"width": "0", "height": "0"}

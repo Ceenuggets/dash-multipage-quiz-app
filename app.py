@@ -25,8 +25,8 @@ app.layout = dbc.Container([
             dash.page_container
         ], xs=12, sm=12, md=8, lg=6, xl=6),
     ], justify="center", className='g-0'),
-    print(dash.page_registry.values())
-], className="index", fluid=True);
+    # print(dash.page_registry.values())
+], className="index", fluid=True)
 
 if __name__ == '__main__':
     app.run(debug=True)
