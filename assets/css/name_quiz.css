@@ -10,6 +10,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .nq #result{
@@ -116,3 +117,4 @@
 .nq .min-attempts{
     font-size: 20px;
 }
+

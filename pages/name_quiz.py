@@ -43,7 +43,7 @@ layout = dbc.Row([
             dbc.Col([
                 html.Div([
                     html.Div([
-                        html.H1("Word Guess")
+                        html.H3("Guess the Nation")
                     ], className='d-flex justify-content-center text-align-center', id="title"),
                     html.Div([
                         html.Div([
