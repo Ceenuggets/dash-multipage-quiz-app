@@ -53,7 +53,7 @@ layout = dbc.Row([
                                 html.Div([
                                 html.Span(id="expected_word"),
                                 html.Span(id="capital"),
-                                    ], id="result"),
+                                    ], id="result1"),
                                 html.Div([
                                     html.Img(id="cflag", style={"width": "100px", "height": "70px"})
                                 ], id="country_flag"),
@@ -101,7 +101,7 @@ def track_input_interaction(value, interacted):
     Output("min_expected_guess", "children"),
     Output("guessed_letters", "children"),
     Output("num_of_attempts", "children"),
-    Output("result", "style"),
+    Output("result1", "style"),
     Output("capital", "children"),
     Output("cflag", "src"),
     Output("cflag", "style"),
